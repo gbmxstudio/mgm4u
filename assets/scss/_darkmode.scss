@@ -1,0 +1,338 @@
+.dark-mode {
+  /* color schemes */
+  --MGM-theme-color: #6500d8;
+  --MGM-theme-text: #ffffff;
+  --MGM-theme-text-primary: #e6def0;
+  --MGM-theme-text-secondary: #d8bbff;
+  --MGM-theme-text-secondary-light: #bbbbbb;
+  --MGM-theme-bordercolor: rgba(255, 255, 255, 0.1);
+
+  --MGM-header: transparent;
+  --MGM-header-active: #290058;
+  --MGM-footer: #290058;
+  --MGM-sidebar: var(--MGM-theme-color);
+  --MGM-card-color: rgba(64, 0, 138, 0.85);
+
+  --MGM-page-bg-1: #290058;
+  --MGM-page-bg-2: #1c003b;
+  --MGM-page-bg-3: #090013;
+  --MGM-page-text: #ffffff;
+  --MGM-page-link: var(--MGM-theme-color);
+
+  .theme-indigo {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #8b9dff;
+    --MGM-theme-color-grad-2: #5c00f1;
+    --MGM-theme-color-grad-3: #68008e;
+
+    /* color schemes */
+    --MGM-theme-color: $indigo;
+    --MGM-header-active: darken($indigo, 28%);
+    --MGM-footer: darken($indigo, 28%);
+    --MGM-card-color: darken($indigo, 28%);
+    --MGM-page-bg-1: darken($indigo, 34%);
+    --MGM-page-bg-2: darken($indigo, 42%);
+    --MGM-page-bg-3: darken($indigo, 50%);
+  }
+
+  .theme-purple {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #e908d8;
+    --MGM-theme-color-grad-2: #5a2ab3;
+    --MGM-theme-color-grad-3: #300284;
+
+    /* color schemes */
+    --MGM-theme-color: $purple;
+    --MGM-header-active: darken($purple, 28%);
+    --MGM-footer: darken($purple, 28%);
+    --MGM-card-color: darken($purple, 28%);
+    --MGM-page-bg-1: darken($purple, 34%);
+    --MGM-page-bg-2: darken($purple, 42%);
+    --MGM-page-bg-3: darken($purple, 50%);
+  }
+
+  .theme-pink {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #ff71c3;
+    --MGM-theme-color-grad-2: #e80075;
+    --MGM-theme-color-grad-3: #4d00da;
+
+    /* color schemes */
+    --MGM-theme-color: $pink;
+    --MGM-header-active: darken($pink, 28%);
+    --MGM-footer: darken($pink, 28%);
+    --MGM-card-color: darken($pink, 28%);
+    --MGM-page-bg-1: darken($pink, 34%);
+    --MGM-page-bg-2: darken($pink, 42%);
+    --MGM-page-bg-3: darken($pink, 50%);
+  }
+
+  .theme-red {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #ffc699;
+    --MGM-theme-color-grad-2: #ff5d83;
+    --MGM-theme-color-grad-3: #dc006a;
+
+    /* color schemes */
+    --MGM-theme-color: $red;
+    --MGM-header-active: darken($red, 28%);
+    --MGM-footer: darken($red, 28%);
+    --MGM-card-color: darken($red, 28%);
+    --MGM-page-bg-1: darken($red, 34%);
+    --MGM-page-bg-2: darken($red, 42%);
+    --MGM-page-bg-3: darken($red, 50%);
+  }
+
+  .theme-orange {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #ffda6b;
+    --MGM-theme-color-grad-2: #ff7c15;
+    --MGM-theme-color-grad-3: #e80774;
+
+    /* color schemes */
+    --MGM-theme-color: $orange;
+    --MGM-header-active: darken($orange, 28%);
+    --MGM-footer: darken($orange, 28%);
+    --MGM-card-color: darken($orange, 28%);
+    --MGM-page-bg-1: darken($orange, 34%);
+    --MGM-page-bg-2: darken($orange, 42%);
+    --MGM-page-bg-3: darken($orange, 50%);
+  }
+
+  .theme-yellow {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #ffdb6f;
+    --MGM-theme-color-grad-2: #f0ac00;
+    --MGM-theme-color-grad-3: #f03000;
+
+    /* color schemes */
+    --MGM-theme-color: $yellow;
+    --MGM-header-active: darken($yellow, 28%);
+    --MGM-footer: darken($yellow, 28%);
+    --MGM-card-color: darken($yellow, 28%);
+    --MGM-page-bg-1: darken($yellow, 34%);
+    --MGM-page-bg-2: darken($yellow, 42%);
+    --MGM-page-bg-3: darken($yellow, 50%);
+  }
+
+  .theme-green {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #bdffaa;
+    --MGM-theme-color-grad-2: #04c5de;
+    --MGM-theme-color-grad-3: #00a0f5;
+
+    /* color schemes */
+    --MGM-theme-color: $green;
+    --MGM-header-active: darken($green, 28%);
+    --MGM-footer: darken($green, 28%);
+    --MGM-card-color: darken($green, 28%);
+    --MGM-page-bg-1: darken($green, 34%);
+    --MGM-page-bg-2: darken($green, 42%);
+    --MGM-page-bg-3: darken($green, 50%);
+  }
+
+  .theme-teal {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #a2fffa;
+    --MGM-theme-color-grad-2: #00a2ad;
+    --MGM-theme-color-grad-3: #3f51b5;
+
+    /* color schemes */
+    --MGM-theme-color: $teal;
+    --MGM-header-active: darken($teal, 28%);
+    --MGM-footer: darken($teal, 28%);
+    --MGM-card-color: darken($teal, 28%);
+    --MGM-page-bg-1: darken($teal, 34%);
+    --MGM-page-bg-2: darken($teal, 42%);
+    --MGM-page-bg-3: darken($teal, 50%);
+  }
+
+  .theme-cyan {
+    /* radial gradient colors */
+    --MGM-theme-color-grad-1: #74e5fb;
+    --MGM-theme-color-grad-2: #258cd6;
+    --MGM-theme-color-grad-3: #3d00ab;
+
+    /* color schemes */
+    --MGM-theme-color: $cyan;
+    --MGM-header-active: darken($cyan, 28%);
+    --MGM-footer: darken($cyan, 28%);
+    --MGM-card-color: darken($cyan, 28%);
+    --MGM-page-bg-1: darken($cyan, 34%);
+    --MGM-page-bg-2: darken($cyan, 42%);
+    --MGM-page-bg-3: darken($cyan, 50%);
+  }
+
+  .alert-danger,
+  .card.alert-danger,
+  .bg-danger-light {
+    background-color: rgba($red, 0.35);
+  }
+  .alert-info,
+  .card.alert-info,
+  .bg-info-light {
+    background-color: rgba($teal, 0.35);
+  }
+  .alert-primary,
+  .card.alert-primary,
+  .bg-primary-light {
+    background-color: rgba($blue, 0.35);
+  }
+  .alert-warning,
+  .card.alert-warning,
+  .bg-warning-light {
+    background-color: rgba($yellow, 0.35);
+  }
+  .alert-success,
+  .card.alert-success,
+  .bg-success-light {
+    background-color: rgba($green, 0.35);
+  }
+  .alert-theme,
+  .card.alert-theme,
+  .bg-theme-light {
+    background-color: var(--MGM-theme-color-light);
+  }
+
+  main {
+    &.bg-1 {
+      background: url("../img/bg1-dark.png") fixed;
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      background-position: top right;
+    }
+
+    &.bg-2 {
+      background: url("../img/bg2-dark.png") fixed;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center right;
+    }
+
+    &.bg-3 {
+      background: url("../img/bg3-dark.png") fixed;
+      background-repeat: no-repeat;
+      background-size: auto auto;
+      background-position: 35% bottom;
+    }
+  }
+  .progressbar-text {
+    color: var(--MGM-theme-text) !important;
+  }
+  .border,
+  .border-top,
+  .border-end,
+  .border-bottom,
+  .border-start {
+    border-color: var(--MGM-theme-bordercolor) !important;
+  }
+
+  body,
+  .btn {
+    color: var(--MGM-theme-text);
+  }
+  a:not(.btn):not(.list-group-item) {
+    --MGM-theme-color: #638ef1;
+    &:focus,
+    &:hover,
+    &:active {
+      color: #ffffff;
+    }
+  }
+  .swiper-pagination {
+    .swiper-pagination-bullet {
+      background-color: var(--MGM-theme-text);
+    }
+  }
+  .tabs .nav-item > .nav-link:not(.active) {
+    --MGM-theme-color: var(--MGM-theme-text);
+  }
+  .chartdoughnut > .datadisplay {
+    --MGM-theme-text: var(--MGM-theme-color);
+  }
+  .btn-light {
+    background-color: var(--MGM-page-bg-2);
+    color: var(--MGM-theme-text);
+    border-color: var(--MGM-page-bg-2);
+  }
+  .bg-light {
+    background-color: var(--MGM-card-color) !important;
+  }
+
+  .btn-default:disabled {
+    color: var(--MGM-theme-text);
+  }
+
+  .card {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.1);
+    -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.07), inset 0 1px 0px rgba(255, 255, 255, 0.1);
+  }
+  .accordion-item {
+    background-color: transparent;
+    .accordion-header {
+      .accordion-button.collapsed {
+        background-color: transparent;
+        color: var(--MGM-theme-text);
+      }
+    }
+    .accordion-collapse.show {
+      background-color: var(--MGM-card-color);
+    }
+  }
+  .list-group-item {
+    color: var(--MGM-theme-text);
+  }
+  .bg-white {
+    background-color: var(--MGM-card-color) !important;
+  }
+  .bg-opac-50 {
+    background-color: var(--MGM-theme-color) !important;
+  }
+  .toast {
+    background-color: var(--MGM-card-color);
+    .toast-header {
+      background-color: var(--MGM-theme-color);
+      color: var(--MGM-card-text);
+    }
+  }
+  .modal-content {
+    background-color: var(--MGM-theme-color);
+    .modal-header {
+      border-color: var(--MGM-theme-bordercolor);
+    }
+  }
+  .form-control,
+  input,
+  .dark-bg .form-control,
+  .dark-bg label {
+    color: var(--MGM-input-text);
+  }
+  .form-control {
+    background-color: var(--MGM-input-color);
+    border-color: var(--MGM-input-bordercolor);
+  }
+  .chat-list .left-chat .chat-block {
+    --MGM-theme-text: var(--MGM-page-text);
+  }
+
+  .daterange-center.daterangepicker {
+    background-color: var(--MGM-page-bg-2);
+    .calendar-table .next span,
+    .calendar-table .prev span {
+      border-color: var(--MGM-theme-text);
+    }
+    td {
+      &.off {
+        background-color: var(--MGM-card-color) !important;
+      }
+      &.in-range {
+        color: var(--MGM-theme-text);
+      }
+    }
+  }
+  .text-purple,
+  .text-color-theme {
+    color: var(--MGM-theme-text);
+  }
+}

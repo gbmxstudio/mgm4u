@@ -1,0 +1,20 @@
+.tabs {
+  background-color: var(--MGM-theme-bordercolor);
+  border-radius: var(--MGM-rounded);
+  padding: 5px;
+
+  .nav-item {
+    & > .nav-link {
+      color: var(--MGM-theme-color);
+      padding: calc(var(--MGM-padding) - 5px) var(--MGM-padding);
+      line-height: 30px;
+      border-radius: calc(var(--MGM-rounded) - 5px);
+      text-transform: uppercase;
+
+      &.active {
+        color: var(--MGM-theme-text);
+        background-color: var(--MGM-theme-color);
+      }
+    }
+  }
+}
