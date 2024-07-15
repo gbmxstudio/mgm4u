@@ -24,15 +24,15 @@
 
     <!-- bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-
-    <!-- swiper carousel css -->
-    <link rel="stylesheet" href="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.css">
+    
+    <!-- date rage picker -->
+    <link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css">
 
     <!-- style css for this template -->
     <link href="assets/css/style.css" rel="stylesheet" id="style">
 </head>
 
-<body class="body-scroll theme-yellow" data-page="profile">
+<body class="body-scroll theme-yellow" data-page="wallet">
 
     <!-- loader section -->
     <div class="container-fluid loader-wrap">
@@ -65,7 +65,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 194.287 141.794" class="menubg">
                         <defs>
-                            <linearGradient id="linear-gradient1" x1="0.5" x2="0.5" y2="1"
+                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
                                 gradientUnits="objectBoundingBox">
                                 <stop offset="0" stop-color="#09b2fd" />
                                 <stop offset="1" stop-color="#6b00e5" />
@@ -73,7 +73,7 @@
                         </defs>
                         <path id="menubg"
                             d="M672.935,207.064c-19.639,1.079-25.462-3.121-41.258,10.881s-24.433,41.037-49.5,34.15-14.406-16.743-50.307-29.667-32.464-19.812-16.308-41.711S500.472,130.777,531.872,117s63.631,21.369,93.913,15.363,37.084-25.959,56.686-19.794,4.27,32.859,6.213,44.729,9.5,16.186,9.5,26.113S692.573,205.985,672.935,207.064Z"
-                            transform="translate(-503.892 -111.404)" fill="url(#linear-gradient1)" />
+                            transform="translate(-503.892 -111.404)" fill="url(#linear-gradient)" />
                     </svg>
 
                     <div class="row mt-3">
@@ -251,253 +251,184 @@
 
         <!-- main page content -->
         <div class="main-container container">
-            <div class="row">
-                <div class="col-12 profile-page">
-                    <div class="clearfix"></div>
-                    <div class="circle small one"></div>
-                    <div class="circle small two"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="282.062"
-                        height="209.359" viewBox="0 0 282.062 209.359" class="menubg">
-                        <defs>
-                            <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1"
-                                gradientUnits="objectBoundingBox">
-                                <stop offset="0" stop-color="#09b2fd" />
-                                <stop offset="1" stop-color="#6b00e5" />
-                            </linearGradient>
-                        </defs>
-                        <path id="profilebg"
-                            d="M751.177,233.459c-28.511,1.567-38.838,7.246-61.77,27.573s-27.623,71.926-65.15,70.883-27.624-21.369-79.744-40.132-47.13-53.005-23.676-84.8,4.009-57.671,33-75.867,83.269,30.223,127.232,21.5,64.157-41.353,82.329-26,5.953,29.138,8.773,46.369,13.786,23.5,13.786,37.91S779.688,231.893,751.177,233.459Z"
-                            transform="translate(-503.892 -122.573)" fill="url(#linear-gradient)" />
-                    </svg>
-
-
-                    <div class="row my-3 py-4">
-                        <div class="col-7 align-self-center">
-                            <h1 class="mb-2"><span class="fw-light text-secondary">Hello!</span><br />Andy Lee</h1>
-                            <p class="text-muted size-12"><strong>Username: andy8988</strong><br /><strong>Ranking: M3</strong></p>
-                        </div>
-
-                        <div class="col align-self-center">
-                            <figure class=" avatar avatar-100 rounded-20 p-1 bg-white shadow-sm" style="position: relative">
-                                <a href="#" class="btn-light position-absolute " style="bottom: -36%; right: 8%; width: 16px; background: transparent!important;"><i style="font-size: 16px;" class="nav-icon bi bi-pencil-square"></i></a>
-                            <img src="assets/img/user1.jpg" alt="" class="rounded-18">
-                            </figure>
-                        </div>
-                    </div>
+            <!-- balance -->
+            <div class="row my-4 text-center">
+                <div class="col-12">
+                    <h1 class="fw-light mb-2" style="font-size: 25px;">2</h1>
+                    <p class="text-secondary"><a href="addmoney.html">Direct Downlines</a></p>
                 </div>
             </div>
 
-            <!-- buttons -->
-            <div class="row mb-4">
+            <!-- list -->
+            <div class="row mb-2">
                 <div class="col">
-                    <a href="" class="btn btn-default btn-lg shadow-sm w-100">Referral Link</a>
+                    <h6 class="title">Network</h6>
                 </div>
-                <!-- <div class="col">
-                    <a href="message.html" class="btn btn-default btn-lg shadow-sm w-100">Message</a>
-                </div> -->
+                <div class="col-auto align-self-center">
+                    <!-- <a href="addcurrency.html" class="small">View All</a> -->
+                </div>
             </div>
-            <!-- location map-->
+
             <div class="row mb-4">
                 <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            
-                            <div class="form-floating mb-3">
-                                <input type="password" class="form-control" value="902394832904" placeholder="Password"
-                                    id="password">
-                                <label for="password">Password</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="Andy Lee" placeholder="Username"
-                                    id="username">
-                                <label for="username">Fullname</label>
-                            </div>
-                            <div class="form-floating is-valid mb-3">
-                                <input type="text" class="form-control" value=""
-                                    placeholder="abc@123.com" id="email">
-                                <label for="emailphone">Email</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value=""
-                                    placeholder="01012345678" id="phone">
-                                <label for="emailphone">Phone</label>
-                                <small style="font-size: 0.7em; opacity: 0.7; font-style: italic;">Mobile : Fill number without the (-) sign or distance. Example = 0123456789</small>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <textarea type="text" class="form-control" value="" rows="2" placeholder="Username"
-                                    id="username">Lot, B-123, Street Hilton, Wolf Wall Street City, Sun Valley Town</textarea>
-                                <label for="username">Address</label>
-                            </div>
-                            
-                <div class="form-floating mb-3">
-                    <select class="form-control" id="State">
-                        <option value="Johor" selected>Johor</option>
-                        <option value="Kedah">Kedah</option>
-                        <option value="Kelantan">Kelantan</option>
-                        <option value="Kuala Lumpur">Kuala Lumpur</option>
-                        <option value="Melaka">Melaka</option>
-                        <option value="Negeri Sembilan">Negeri Sembilan</option>
-                        <option value="Pahang">Pahang</option>
-                        <option value="Perak">Perak</option>
-                        <option value="Perlis">Perlis</option>
-                        <option value="Pulau Pinang">Pulau Pinang</option>
-                        <option value="Sabah">Sabah</option>
-                        <option value="Sarawak">Sarawak</option>
-                        <option value="Selangor">Selangor</option>
-                        <option value="Terengganu">Terengganu</option>
-                        <option value="Brunei">Brunei</option>
-                        <option value="Indonesia">Indonesia</option>
-                        <option value="Singapore">Singapore</option>
-                        <option value="Thailand">Thailand</option>
-                        <option value="Lain-lain">Lain-lain</option>
-                    </select>
-                    <label for="country">State</label>
-                </div>
-                            <!-- <div class="row">
-                                <div class="col">
-                                    <p class="mb-1">Jon Winsels</p>
-                                    <p class="text-secondary small">3023 New Cross Rd, New Cross, London SE14 6AS, New
-                                        York City, US</p>
-                                </div>
-                                <div class="col-auto align-self-center">
-                                    <button class="btn btn-link text-color-theme btn-44">
-                                        <i class="bi bi-arrow-up-right-circle fs-2"></i>
-                                    </button>
-                                </div>
-                            </div> -->
-
-                        </div>
-
-                        <div class="card-footer">
-                            <div class="col">
-                                <a href="" class="btn btn-default btn-sm shadow-sm">Update</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Usdt wallet address -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h6 class="title">USDT Wallet Address</h6>
-                </div>
-            </div>
-            <div class="row mb-1">
-                <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            
-                            <div class="form-floating mb-3">
-                                <select name="typeofwithdrawal" id="typeofwithdrawal" class="form-control">
-                                    <option value="bank" >Local Bank</option>
-                                    <option value="transferusdt" selected>Transfer Wallet USDT</option>
-                                  </select>
-                                <label for="typeofwithdrawal">Withdrawal Type</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="059438053843401931" placeholder="USDT Wallet Address"
-                                    id="usdtwalletaddress">
-                                <label for="usdtwalletaddress">USDT Wallet Address</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <select name="networkusdt" id="networkusdt" class="form-control">
-                                    <option value="trc20" >TRC20</option>
-                                    <option value="bep20" selected>BEP 20</option>
-                                  </select>
-                                <label for="networkusdt">Network USDT</label>
-                            </div>
-                            
-                        </div>
-
-                        <div class="card-footer">
-                            <div class="col">
-                                <a href="" class="btn btn-default btn-sm shadow-sm">Update</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Local Bank -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h6 class="title">Local Bank Address</h6>
-                </div>
-            </div>
-            <div class="row mb-1">
-                <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="OCBC Bank" placeholder="Bank Name"
-                                id="bankname">
-                                <label for="bankname">Bank Name</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="059438053843401931" placeholder="Account Number"
-                                    id="accountnumber">
-                                <label for="accountnumber">Account Number</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="Muhammad Ahlizan" placeholder="Account Holder"
-                                    id="accountholder">
-                                <label for="accountholder">Account Holder</label>
-                            </div>
-                            
-                        </div>
-
-                        <div class="card-footer">
-                            <div class="col">
-                                <a href="" class="btn btn-default btn-sm shadow-sm">Update</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-            <!-- Heir Information  -->
-            <div class="row mb-3">
-                <div class="col">
-                    <h6 class="title">Heir Information</h6>
-                </div>
-            </div>
-            <div class="row mb-1">
-                <div class="col-12">
-                    <div class="card shadow-sm">
-                        <div class="card-body">
-                            
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="Siti Hafizah Binti Amzah" placeholder="Bank Name"
-                                id="bankname">
-                                <label for="bankname">Nama Penuh Pewaris</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="890304234442" placeholder="Account Number"
-                                    id="accountnumber">
-                                <label for="accountnumber">No KP Pewaris</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="010234354312" placeholder="Account Holder"
-                                    id="accountholder">
-                                <label for="accountholder">No. Telefon Pewaris </label>
-                            </div>
-
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" value="Isteri" placeholder="Account Holder"
-                                    id="accountholder">
-                                <label for="accountholder">Hubungan</label>
-                            </div>
-                            
-                        </div>
-
-                        <div class="card-footer">
-                            <div class="col">
-                                <a href="" class="btn btn-default btn-sm shadow-sm">Update</a>
-                            </div>
+                    <div class="card">
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush bg-none">
+                                <li class="list-group-item text-left py-2" style="background: #755401; color:#ebd7a6; border-top-left-radius: 20px; border-top-right-radius: 20px;">Level 1</li>
+                       
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">SULTANRICH</p>
+                                            <p class="text-secondary size-10">Package: 10000</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <!-- <p class="text-success mb-0 ">Active</p> -->
+                                            <p class="text-success size-10">Active </p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">Bigboss</p>
+                                            <p class="text-secondary size-10">Package: 10000</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <!-- <p class="text-success mb-0"></p> -->
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                
+                                <li class="list-group-item text-left py-2" style="background: #755401; color:#ebd7a6;">Level 2</li>
+                       
+                       
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">MOHD ADAM BIN MAT YASHIM</p>
+                                            <p class="text-secondary size-10">BIGBOSS88 </p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 1000</p>
+                                            <p class="text-success size-10 ">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">mohd syaril bin Abdullah Tajudin</p>
+                                            <p class="text-secondary size-10">DMS</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 50</p>
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-left py-2" style="background: #755401; color:#ebd7a6;">Level 3</li>
+                       
+                       
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">mohd syaril bin Abdullah Tajudin</p>
+                                            <p class="text-secondary size-10">DMS</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 50</p>
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">mohd syaril bin Abdullah Tajudin</p>
+                                            <p class="text-secondary size-10">DMS</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 50</p>
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">mohd syaril bin Abdullah Tajudin</p>
+                                            <p class="text-secondary size-10">DMS</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 50</p>
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">mohd syaril bin Abdullah Tajudin</p>
+                                            <p class="text-secondary size-10">DMS</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 50</p>
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <a class="d-flex" href="transactiondetails.html">
+                                        <div class="col-auto">
+                                        </div>
+                                        <div class="col align-self-center ps-0">
+                                            <p class="text-white mb-0">mohd syaril bin Abdullah Tajudin</p>
+                                            <p class="text-secondary size-10">DMS</p>
+                                        </div>
+                                        <div class="col-auto align-self-center text-end">
+                                            <p class="text-white mb-0">Package: 50</p>
+                                            <p class="text-success size-10">Active</p>
+                                        </div>
+</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -547,7 +478,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="wallet.html">
+                    <a class="nav-link active" href="wallet.html">
                         <span>
                             <i class="nav-icon bi bi-wallet2"></i>
                             <span class="nav-text">Wallet</span>
@@ -558,7 +489,7 @@
         </div>
     </footer>
     <!-- Menu Modal -->
-    <div class="modal fade" id="menumodal" tabindex="-1"  aria-hidden="true">
+    <div class="modal fade" id="menumodal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content shadow">
                 <div class="modal-body">
@@ -648,8 +579,9 @@
     <!-- Progress circle js script -->
     <script src="assets/vendor/progressbar-js/progressbar.min.js"></script>
 
-    <!-- swiper js script -->
-    <script src="assets/vendor/swiperjs-6.6.2/swiper-bundle.min.js"></script>
+    <!-- daterange picker script -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
 
     <!-- page level custom script -->
     <script src="assets/js/app.js"></script>
