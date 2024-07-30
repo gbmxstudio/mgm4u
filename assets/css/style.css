@@ -14739,6 +14739,17 @@ height: 18px;
   border-color:  #fbba00;
 }
 
+.genealogy-tree.group-sales .member-image{
+width: 120px;  background: gold; color: #222; border-radius: 10px;overflow: hidden;
+}
+.genealogy-tree.group-sales .member-image .member-username{
+  border-bottom: 2px solid goldenrod; padding: 8px 10px; 
+  }
+  .genealogy-tree.group-sales .member-image .member-details{
+    padding: 8px 10px; background-color: #c7852a78; color: #444
+    }
+    
+
 /*--------------memeber-card-design----------*/
 .member-view-box{
   padding:0px 20px;
